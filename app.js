@@ -8,7 +8,8 @@ app.use(cors({
   origin: [
     "https://chatbotekia.netlify.app",
     "https://chatbotekia-adm.netlify.app"
-  ]
+  ],
+  methods: ['GET', 'POST']
 }));
 
 app.use(express.json());
